@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/main.js",
   "scripts": {
-    "app": "node src/main.js",
+    "start": "node src/main.js",
     "main": "node --env-file-if-exists=.env src/main.js",
     "test": "node --env-file-if-exists=.env test/netease.test.js"
   },

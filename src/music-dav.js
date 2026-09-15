@@ -11,7 +11,7 @@ function safeFileName(name) {
 }
 
 function createMusicDavServer({ config, logger }) {
-    const server = new webdav.WebDAVServer({ port: config.port });
+    const server = new webdav.WebDAVServer({ port: config.port , hostname: '0.0.0.0'});
     const cache = {
         playlists: { lastUpdate: 0, pending: null, byName: new Map() },
         tracks: new Map(),

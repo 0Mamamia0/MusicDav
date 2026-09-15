@@ -1,0 +1,11 @@
+services:
+  musicdav:
+    build: .
+    container_name: MusicDav
+    ports:
+      - "2478:2777"
+    environment:
+      - NETEASE_UID=${NETEASE_UID}
+      - NETEASE_COOKIE=${NETEASE_COOKIE}
+      - PORT=2777
+    restart: unless-stopped
