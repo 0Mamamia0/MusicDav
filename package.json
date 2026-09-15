@@ -1,0 +1,19 @@
+{
+  "name": "musicdav",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "app": "node src/main.js",
+    "main": "node --env-file-if-exists=.env src/main.js",
+    "test": "node --env-file-if-exists=.env test/netease.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.20.0",
+    "webdav-server": "^2.6.3"
+  }
+}
